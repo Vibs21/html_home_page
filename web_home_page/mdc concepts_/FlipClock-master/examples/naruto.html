@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8"> <!--information about your page is meta-->
+	<title> vaibhav first web site </title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="flipclock.css">
+	<script src="flipclock.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement("article");
+		document.createElement("nav");
+		document.createElement("section");
+		document.createElement("main");
+		document.createElement("header");
+		document.createElement("footer");
+		document.createElement("aaide");
+	</script>
+	<![endif]-->
+  <body>
+	<header class="banner">
+	  <h1>Naruto Shipudden</h1>
+	  <p>this is the story about the hero who never give's up</p>
+	</header>
+	
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+		<li><a href="about.html">about</a></li>
+		<li><a href="history.html">history</a></li>
+	</ul>
+  
+	<img src="file:///C:/Users/Mumma!!/Desktop/HTML/naruto.jpg"/ width=100%>
+	</nav>
+   <main>
+			
+		<section>
+		    <h2>teams</h2>
+				<article>
+					
+					<div class="clock" style="margin:2em;"></div>
+					<div class="message"></div>
+
+			
+				</article>
+		</section>	
+			
+		<section>
+			<h2>Naruto</h2>
+				<article>
+				  <header>
+					<h3>fought 3rd great ninja war</h3>
+					<p>rasingun is his speacility</p>
+				  </header>
+					<p> this contains story</p>
+					<p> this contains story</p>
+				</article>
+		
+		    <h2>saskue</h2>
+				<article>
+				  <header>
+					<h3>fought 3rd great ninja war with naruto</h3>
+					<p>chitori is his speacility</p>
+				  </header>
+					<p> this contains story</p>
+					<p> this contains story</p>
+				</article>
+		</section>
+		
+		<section>
+			<h2>kages</h2>
+				<article>
+				  <header>
+					<h3>fought 3rd great ninja war</h3>
+					<p>healing is their speacility</p>
+				  </header>
+					<p> this contains story</p>
+					<p> this contains story</p>
+				</article>
+		
+		    <h2>teams</h2>
+				<article>
+				  <header>
+					<h3>fought 3rd great ninja war with anruto</h3>
+					<p>follow command given by leader</p>
+				  </header>
+					<p> this contains story</p>
+					<p> this contains story</p>
+				</article>
+		</section>
+   
+   </main>
+   
+   <aside>
+		<h2>be a ninja</h2>
+		<p>be a one who never go back on words</p>
+	</aside>
+		
+	<footer>
+		<p>Copyrights &copy VaibhavBajpayee.com</p>
+	</footer>
+	
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+  </body>
+
+
+</head>
